@@ -1,0 +1,418 @@
+.topsection{
+  /* background-color: white; */
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.refresh button{
+  padding: 10px;
+  /* width: 120px; */
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: none;
+  font-size: 12px;
+}
+
+.refresh button i{
+  font-size: 10px;
+}
+
+.topsection .name{
+  margin-left: 75px;
+}
+.topsection .refresh{
+  margin-right: 70px;
+}
+.row{
+  width: 100%;
+  top: 100px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+}
+.block-grid {
+  width: calc(100% / 3.5);
+  display: inline-block;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 5px;
+  gap: 1rem;
+  padding: 10px;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px -4px black;
+}
+
+
+.block-grid:hover {
+ scale: 1.015;
+ transition: 0.5s; 
+}
+.block-grid .top .tr{
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+.block-grid .top img{
+  width: 16px;
+  margin-right: 8px;
+}
+.block-grid .top i{
+  font-size:9px;
+}
+
+.block-grid .top .rr{
+  font-size: 12px;
+  color: rgb(212, 32, 32);
+}
+
+.block-grid .top .rr.success{
+  font-size: 12px;
+  color: rgb(32, 212, 101);
+}
+.block-grid .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block-grid .bal.a{
+  margin-top: -10px;
+}
+
+
+.block-grid .bal p{
+  color: rgba(0, 0, 0, 0.534);
+  font-size: 13px;
+  margin-bottom: -20px;
+}
+.block-grid .bal h3{
+  font-size: 18px;
+}
+
+.block-grid .ex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-grid .ex .text{
+  font-size: 12px;
+  color: #facc15;
+}
+
+.block-grid .ex button{
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #facc15;
+  outline: none;
+  border: none;
+}
+
+
+
+
+
+
+/* modal */
+.modal{
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.281);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: popup 0.5s;
+  position: fixed;
+}
+
+.modal .content{
+  color: black;
+  width: 35%;
+  border-radius: 5px;
+  background-color: white;
+  animation: pop 0.3s;
+}
+
+
+.modal .hea{
+  font-size: 20px;
+  padding: 15px;
+  margin: 0px;
+  margin-bottom: -10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal .hea i{
+  font-size: 15px;
+  margin-left: -10px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Form */
+
+
+
+/* MODAL FORM */
+.form-group{
+  padding: 10px;
+  width: 90%;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-group label{
+  font-size: 14px;
+}
+.form-group .a{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /* background-color: red; */
+  align-items: center;
+}
+
+.form-group .rate{
+  /* float: left; */
+  /* background-color: red; */
+  width: 200px;
+  margin-left: -100px;
+}
+
+
+.form-group input{
+  width: 170px;
+  outline: none;
+  border: solid 1px rgba(0, 0, 0, 0.178);
+  border-radius: 5px;
+  background: white;
+  padding: 10px;
+  color: black;
+}
+
+.form-group input.long{
+  position: relative;
+  width: 400px;
+}
+
+.form-group .rate span.rr{
+  font-size: 18px;
+  font-weight: bold;
+}
+.form .justify-end {
+  justify-content: flex-end;
+}
+
+
+.form-group.last{
+  border: solid 1px rgba(0, 0, 0, 0.11);
+  border-radius: 5px;
+}
+
+
+.actions{
+  position: relative;
+  float: right;
+  padding: 20px;
+}
+.actions button{
+  margin-left: 10px;
+}
+
+.form button {
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.form button:first-child {
+  background-color: #ffffff; /* Tailwind's gray-300 */
+  border: solid 1px rgba(0, 0, 0, 0.178);
+  color: black;
+}
+
+.form button:last-child {
+  background-color: #facc15; /* Tailwind's yellow-400 */
+  color: white;
+}
+
+
+
+button:hover{
+  background-color: rgb(119, 92, 3);
+  transition: ease-in-out 0.5s;
+  scale: 1.05;
+}
+
+
+
+
+
+
+
+
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #facc15; /* Tailwind's green-400 */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+
+@keyframes popup {
+  0%{
+    opacity: 0;
+  }
+}
+
+@keyframes pop {
+  0%{
+    opacity: 0;
+    transform: translateY(300px);
+  }
+}
+
+@media (max-width: 768px) {
+
+.row{
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  top:10%;
+}
+
+
+.block-grid {
+  width: 85%;
+  display: inline-block;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 15px;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.topsection{
+  /* background-color: white; */
+  position: absolute;
+  width: 100%;
+  top: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.topsection .name{
+  margin-left: 10px;
+}
+.topsection .refresh{
+  margin-right: 10px;
+}
+
+
+.modal .content{
+  color: black;
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  animation: pop 0.3s;
+}
+
+/* MODAL FORM */
+.form-group{
+  padding: 10px;
+  width: 95%;
+  margin-left: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.form-group .rate{
+  /* float: left;
+  background-color: red; */
+  width: auto;
+  margin-left: -100px;
+}
+
+.form-group input.long{
+  position: relative;
+  width: 310px;
+}
+}
+
